@@ -1,0 +1,452 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e928cd2e-687b-4f0f-a80d-e766cc3f22d6")
+	(paper "A4")
+	(lib_symbols)
+	(text_box "mosfets"
+		(exclude_from_sim no)
+		(at 151.638 33.274 0)
+		(size 10.16 4.572)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "66436848-e90d-4ba0-bd05-13b57a963352")
+	)
+	(text_box "lipo flat battery"
+		(exclude_from_sim no)
+		(at 115.57 22.606 0)
+		(size 18.034 6.096)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7084413a-eb13-4931-bc78-e50b42aeb6ca")
+	)
+	(text_box "leds"
+		(exclude_from_sim no)
+		(at 173.228 33.274 0)
+		(size 6.604 4.064)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c50e4e42-2236-4939-8952-b1cc23ae6db7")
+	)
+	(text_box "pulse generator"
+		(exclude_from_sim no)
+		(at 77.724 33.528 0)
+		(size 18.034 4.572)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c5fbfd05-36ed-44a8-b798-0e33a4ee19f0")
+	)
+	(text_box "demux"
+		(exclude_from_sim no)
+		(at 126.238 33.528 0)
+		(size 14.478 5.334)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c7dc5d0a-f288-4ea6-ae72-5d0a89fb23aa")
+	)
+	(text_box "adder\n"
+		(exclude_from_sim no)
+		(at 107.696 32.766 0)
+		(size 8.636 5.08)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "cd6d6ad6-96be-496d-88dc-50559224bcae")
+	)
+	(polyline
+		(pts
+			(xy 105.918 35.56) (xy 105.664 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "097e3017-de1b-442f-9086-81e4ddecf1b1")
+	)
+	(polyline
+		(pts
+			(xy 105.918 35.56) (xy 104.14 33.782)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bcb664b-71a7-46a3-931b-90b234b5bcc1")
+	)
+	(polyline
+		(pts
+			(xy 150.368 36.068) (xy 150.114 36.068)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc446ef-7c20-4811-8f32-db3c72b141f5")
+	)
+	(polyline
+		(pts
+			(xy 142.748 36.068) (xy 150.368 36.068)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fa6a15f-02cc-4b98-81d2-742eb2c6876a")
+	)
+	(polyline
+		(pts
+			(xy 171.45 35.306) (xy 169.672 33.528)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a824cce-98f2-49af-b069-8ceb1b5731eb")
+	)
+	(polyline
+		(pts
+			(xy 125.222 35.814) (xy 123.444 34.036)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c5cbec2-f67d-47ee-a21f-0f02b4ed65be")
+	)
+	(polyline
+		(pts
+			(xy 150.368 36.068) (xy 148.59 37.846)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "424cf4e4-900b-412c-8a94-4f60d60ca853")
+	)
+	(polyline
+		(pts
+			(xy 163.83 35.306) (xy 171.45 35.306)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49b220c6-a3a8-4097-90a7-00f288115c0f")
+	)
+	(polyline
+		(pts
+			(xy 105.918 35.56) (xy 104.14 37.338)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65da8936-bb25-4f42-a45b-8f46d4109948")
+	)
+	(polyline
+		(pts
+			(xy 150.368 36.068) (xy 148.59 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cf78fef-554d-4f29-ab46-24c2947421b0")
+	)
+	(polyline
+		(pts
+			(xy 125.222 35.814) (xy 123.444 37.592)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98756b6e-0377-4ef4-b570-dad1a06d7a6d")
+	)
+	(polyline
+		(pts
+			(xy 125.222 35.814) (xy 124.968 35.814)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae757d86-b411-4a73-a2d3-09f803e708c4")
+	)
+	(polyline
+		(pts
+			(xy 97.536 35.56) (xy 105.918 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be38663a-ace1-40fe-afd7-31b494d4cea0")
+	)
+	(polyline
+		(pts
+			(xy 116.84 35.814) (xy 125.222 35.814)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f05165-1817-470f-b81d-4bfa3af6adb9")
+	)
+	(polyline
+		(pts
+			(xy 171.45 35.306) (xy 169.672 37.084)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d551b92f-2fb0-40f1-b273-2615c8a9c62c")
+	)
+	(sheet
+		(at 105.156 41.148)
+		(size 12.7 9.144)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2a4fd164-9ee5-421c-8853-6120204b2356")
+		(property "Sheetname" "adder"
+			(at 105.156 40.4364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "adder.kicad_sch"
+			(at 105.156 50.8766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "grad-cap-pcb"
+				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 78.74 40.894)
+		(size 16.764 12.192)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3ed43677-737a-44c3-a351-4c8c73fbf55f")
+		(property "Sheetname" "pulse_gen"
+			(at 78.74 40.1824 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pulse_gen.kicad_sch"
+			(at 78.74 53.6706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "grad-cap-pcb"
+				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 156.718 41.656)
+		(size 19.812 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d9049571-73bb-452d-ad4c-8ff09b138afd")
+		(property "Sheetname" "leds+mosfets"
+			(at 156.718 40.9444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "leds+mosfets.kicad_sch"
+			(at 156.718 52.4006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "grad-cap-pcb"
+				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.524 41.91)
+		(size 12.7 10.922)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dd208767-0015-4b8e-a614-0718680cb4ca")
+		(property "Sheetname" "demux"
+			(at 128.524 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "demux.kicad_sch"
+			(at 128.524 53.4166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "grad-cap-pcb"
+				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
