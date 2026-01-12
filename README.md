@@ -16,6 +16,11 @@ the lines will not be visible. those are on layers user1, 2 and 3
 
 
 LED Sequence:
+
+![animation](https://github.com/user-attachments/assets/5f1d82e9-26c4-4634-a0ad-d6cc6b6b0d33)
+
+*this is 5 fps but the physical one should be ~4 fps
+
 LED #, Frame #
 |#  |1  |2  |3  |4  |5  |6  |7  |8  |9  |A  |B  |C  |D  |E  |F  |G  |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
