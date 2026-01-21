@@ -2082,131 +2082,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+2V5"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+2V5"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+2V5\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+2V5_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+2V5_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -2635,12 +2510,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a1f8219-2963-4a39-8d73-02f13d7d964f")
-	)
-	(junction
-		(at 57.15 363.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0da5c999-e0c2-4e39-8e91-58e31ffd0f2b")
 	)
 	(junction
 		(at 123.19 251.46)
@@ -4229,6 +4098,16 @@
 			(type default)
 		)
 		(uuid "53f5ef3d-2ab4-46ea-bf4c-fdcb7bdfd8e4")
+	)
+	(wire
+		(pts
+			(xy 44.45 40.64) (xy 46.99 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c0d3fd-db39-4890-8f1e-4427d8d58958")
 	)
 	(wire
 		(pts
@@ -5832,16 +5711,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 349.25) (xy 57.15 363.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed8f9485-283d-4cdc-ba75-09287f266d55")
-	)
-	(wire
-		(pts
 			(xy 90.17 363.22) (xy 90.17 377.19)
 		)
 		(stroke
@@ -6329,6 +6198,16 @@
 			(justify right bottom)
 		)
 		(uuid "21638239-cad8-4f70-9688-0e338fad271b")
+	)
+	(label "frame14"
+		(at 214.63 307.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "222238b6-75ce-445f-8039-9f345dac627e")
 	)
 	(label "7or8"
 		(at 177.8 167.64 180)
@@ -8119,16 +7998,6 @@
 			(justify right bottom)
 		)
 		(uuid "b2b33da9-72c5-4bdc-8e76-5d89ae18fbc6")
-	)
-	(label "14or15"
-		(at 214.63 307.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b46418a9-1b51-4d93-8d2c-1d68d663a86a")
 	)
 	(label "6or7"
 		(at 247.65 349.25 180)
@@ -12031,7 +11900,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 182.88 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12040,7 +11909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "205bd164-f8b4-439a-85d9-3a1898a2d5df")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR25"
 			(at 182.88 91.44 0)
 			(effects
 				(font
@@ -12049,8 +11918,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 182.88 83.82 0)
+		(property "Value" "+3.3V"
+			(at 182.88 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12075,7 +11944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 182.88 87.63 0)
 			(effects
 				(font
@@ -12090,7 +11959,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR025")
+					(reference "#PWR25")
 					(unit 1)
 				)
 			)
@@ -13394,7 +13263,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 195.58 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13403,7 +13272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27f05aa9-363a-4c14-8ae1-bb98dcbe0f37")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR18"
 			(at 195.58 44.45 0)
 			(effects
 				(font
@@ -13412,8 +13281,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 195.58 36.83 0)
+		(property "Value" "+3.3V"
+			(at 195.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13438,7 +13307,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 195.58 40.64 0)
 			(effects
 				(font
@@ -13453,7 +13322,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR018")
+					(reference "#PWR18")
 					(unit 1)
 				)
 			)
@@ -14110,7 +13979,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 96.52 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14119,7 +13988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "341278ae-63e4-4982-a0e2-24df04047014")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR22"
 			(at 96.52 78.74 0)
 			(effects
 				(font
@@ -14128,8 +13997,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 96.52 71.12 0)
+		(property "Value" "+3.3V"
+			(at 96.52 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14154,7 +14023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 96.52 74.93 0)
 			(effects
 				(font
@@ -14169,7 +14038,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR022")
+					(reference "#PWR22")
 					(unit 1)
 				)
 			)
@@ -14238,72 +14107,6 @@
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
 					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V5")
-		(at 46.99 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3577027c-0671-4bfe-99e1-31d224f5bce1")
-		(property "Reference" "#PWR02"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2V2"
-			(at 46.99 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 46.99 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83e78422-ea8a-439f-9934-1634bfe57429")
-		)
-		(instances
-			(project "grad-cap-pcb"
-				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -14664,7 +14467,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 195.58 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14673,7 +14476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3abe9a6e-8eed-47df-9abb-c8655490f9cd")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR26"
 			(at 195.58 78.74 0)
 			(effects
 				(font
@@ -14682,8 +14485,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 195.58 71.12 0)
+		(property "Value" "+3.3V"
+			(at 195.58 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14708,7 +14511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 195.58 74.93 0)
 			(effects
 				(font
@@ -14723,7 +14526,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR026")
+					(reference "#PWR26")
 					(unit 1)
 				)
 			)
@@ -16947,7 +16750,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 232.41 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16956,7 +16759,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bc040dd-9df5-4f60-853d-0d99ee6d6d35")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR27"
 			(at 232.41 91.44 0)
 			(effects
 				(font
@@ -16965,8 +16768,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 232.41 83.82 0)
+		(property "Value" "+3.3V"
+			(at 232.41 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16991,7 +16794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 232.41 87.63 0)
 			(effects
 				(font
@@ -17006,7 +16809,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR027")
+					(reference "#PWR27")
 					(unit 1)
 				)
 			)
@@ -18338,7 +18141,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 182.88 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18347,7 +18150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "686244f1-e3a3-4208-a22e-d144817617f7")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR17"
 			(at 182.88 57.15 0)
 			(effects
 				(font
@@ -18356,8 +18159,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 182.88 49.53 0)
+		(property "Value" "+3.3V"
+			(at 182.88 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18382,7 +18185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 182.88 53.34 0)
 			(effects
 				(font
@@ -18397,14 +18200,14 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR017")
+					(reference "#PWR17")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 232.41 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18413,7 +18216,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68e807e6-7115-4adc-b7bf-8db65bf560c0")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR19"
 			(at 232.41 57.15 0)
 			(effects
 				(font
@@ -18422,8 +18225,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 232.41 49.53 0)
+		(property "Value" "+3.3V"
+			(at 232.41 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18448,7 +18251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 232.41 53.34 0)
 			(effects
 				(font
@@ -18463,7 +18266,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR019")
+					(reference "#PWR19")
 					(unit 1)
 				)
 			)
@@ -19869,6 +19672,72 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 44.45 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f4d4c45-6fdf-409b-bb0e-b399f6e71fb0")
+		(property "Reference" "#PWR072"
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 44.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 44.45 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70feb2f5-987d-4e12-9bb2-7211c0686b09")
+		)
+		(instances
+			(project "grad-cap-pcb"
+				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 433.07 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21040,7 +20909,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 146.05 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21049,7 +20918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91b569bf-7417-46e7-adc9-1d2232317d66")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR24"
 			(at 146.05 78.74 0)
 			(effects
 				(font
@@ -21058,8 +20927,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 146.05 71.12 0)
+		(property "Value" "+3.3V"
+			(at 146.05 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21084,7 +20953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 146.05 74.93 0)
 			(effects
 				(font
@@ -21099,7 +20968,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR024")
+					(reference "#PWR24")
 					(unit 1)
 				)
 			)
@@ -21298,7 +21167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 133.35 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21307,7 +21176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92d6816b-75d0-4517-a3d7-a98f9c34758a")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR15"
 			(at 133.35 57.15 0)
 			(effects
 				(font
@@ -21316,8 +21185,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 133.35 49.53 0)
+		(property "Value" "+3.3V"
+			(at 133.35 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21342,7 +21211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 133.35 53.34 0)
 			(effects
 				(font
@@ -21357,7 +21226,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR015")
+					(reference "#PWR15")
 					(unit 1)
 				)
 			)
@@ -21937,7 +21806,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 83.82 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21946,7 +21815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b3e8a33-a76e-4502-8edf-a8e15b859082")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR21"
 			(at 83.82 91.44 0)
 			(effects
 				(font
@@ -21955,8 +21824,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 83.82 83.82 0)
+		(property "Value" "+3.3V"
+			(at 83.82 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21981,7 +21850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 83.82 87.63 0)
 			(effects
 				(font
@@ -21996,7 +21865,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR021")
+					(reference "#PWR21")
 					(unit 1)
 				)
 			)
@@ -22195,7 +22064,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 96.52 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22204,7 +22073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ef80a0e-7e4c-4d69-9463-1a0360b3f6d9")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR14"
 			(at 96.52 44.45 0)
 			(effects
 				(font
@@ -22213,8 +22082,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 96.52 36.83 0)
+		(property "Value" "+3.3V"
+			(at 96.52 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22239,7 +22108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 96.52 40.64 0)
 			(effects
 				(font
@@ -22254,7 +22123,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR014")
+					(reference "#PWR14")
 					(unit 1)
 				)
 			)
@@ -22491,7 +22360,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 133.35 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22500,7 +22369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a327c0b8-f38b-4c2c-aefc-4531eaa65a4a")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR23"
 			(at 133.35 91.44 0)
 			(effects
 				(font
@@ -22509,8 +22378,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 133.35 83.82 0)
+		(property "Value" "+3.3V"
+			(at 133.35 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22535,7 +22404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 133.35 87.63 0)
 			(effects
 				(font
@@ -22550,7 +22419,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR023")
+					(reference "#PWR23")
 					(unit 1)
 				)
 			)
@@ -23393,7 +23262,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 83.82 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23402,7 +23271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aceb63f3-6ff1-49cd-87f2-43e060fa3017")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR1"
 			(at 83.82 57.15 0)
 			(effects
 				(font
@@ -23411,8 +23280,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 83.82 49.53 0)
+		(property "Value" "+3.3V"
+			(at 83.82 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23437,7 +23306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 83.82 53.34 0)
 			(effects
 				(font
@@ -23452,7 +23321,7 @@
 		(instances
 			(project ""
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR01")
+					(reference "#PWR1")
 					(unit 1)
 				)
 			)
@@ -23527,7 +23396,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 146.05 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23536,7 +23405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ada030a9-e463-4744-a422-e9e73f577b1e")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR16"
 			(at 146.05 44.45 0)
 			(effects
 				(font
@@ -23545,8 +23414,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 146.05 36.83 0)
+		(property "Value" "+3.3V"
+			(at 146.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23571,7 +23440,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 146.05 40.64 0)
 			(effects
 				(font
@@ -23586,7 +23455,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR016")
+					(reference "#PWR16")
 					(unit 1)
 				)
 			)
@@ -26001,7 +25870,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
+		(lib_id "power:+3.3V")
 		(at 46.99 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26010,7 +25879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccd05961-640b-4536-a5b0-1f8e833b03f2")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR20"
 			(at 46.99 78.74 0)
 			(effects
 				(font
@@ -26019,8 +25888,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V2"
-			(at 46.99 71.12 0)
+		(property "Value" "+3.3V"
+			(at 46.99 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26045,7 +25914,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 46.99 74.93 0)
 			(effects
 				(font
@@ -26060,7 +25929,7 @@
 		(instances
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "#PWR020")
+					(reference "#PWR20")
 					(unit 1)
 				)
 			)
@@ -27981,102 +27850,6 @@
 			(project "grad-cap-pcb"
 				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 53.34 349.25 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7032bcb-8aa1-4395-a670-fdc6dc1183fe")
-		(property "Reference" "D103"
-			(at 54.9275 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 54.9275 345.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 53.34 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 53.34 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 53.34 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 53.34 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 53.34 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "443beea1-f1e5-47d1-b537-c96b0b2d6851")
-		)
-		(pin "1"
-			(uuid "d50a16eb-9937-4378-82f6-adc8c386c49e")
-		)
-		(instances
-			(project "grad-cap-pcb"
-				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6/d9049571-73bb-452d-ad4c-8ff09b138afd"
-					(reference "D103")
 					(unit 1)
 				)
 			)
