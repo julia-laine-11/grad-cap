@@ -4113,6 +4113,16 @@
 		)
 		(uuid "fe3c1e99-5b52-497b-a851-5c2b56a2babf")
 	)
+	(label "pd_r_18{slash}19"
+		(at 331.47 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0025ddcd-d90f-4f46-a081-456d8aaccb2b")
+	)
 	(label "u5-pu-r1"
 		(at 172.72 96.52 0)
 		(effects
