@@ -13,6 +13,9 @@ This is a pcb for my grad cap
 
 This was previously 16 frames, but I reduced it to 8 due to the crazy amount of traces needed. I also limited each LED to 2 frames at maximum and reduced the amount of LEDs per firework.
 8 frames should be easier to route and less expensive for me to manufacture, lol
+
+The LEDs are also updated to be the correct colors. I decided to make the tails white, so I needed to make the other LEDs able to run at about the same voltage. Blue and some greens and yellows can do 2.9-3.2v (what white typically runs at). I want to have similar/the same voltages so I do not need to spend so much time soldering and setting the correct resistors. 
+
 #
 ## Hardware
 - there should be a clock sending out a steady pulse (555 or something similar)
