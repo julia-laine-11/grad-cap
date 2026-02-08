@@ -190,6 +190,7 @@
         0.0,
         0.0,
         0.254,
+        0.2794,
         0.3048,
         0.4572,
         0.5588,
@@ -618,7 +619,7 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
+      "sort_asc": false,
       "sort_field": "Footprint"
     },
     "connection_grid_size": 50.0,
