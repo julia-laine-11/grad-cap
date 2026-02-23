@@ -16,37 +16,41 @@ This was previously 16 frames, but I reduced it to 8 due to the crazy amount of 
 
 The LEDs are also updated to be the correct colors. I decided to make the tails white, so I needed to make the other LEDs able to run at about the same voltage. Blue and some greens and yellows can do 2.9-3.2v (what white typically runs at). I want to have similar/the same voltages so I do not need to spend so much time soldering and setting the correct resistors. 
 
-#
-## Hardware
-- there should be a clock sending out a steady pulse (555 or something similar)
-<img width="779" height="580" alt="image" src="https://github.com/user-attachments/assets/2fbc1732-e342-4fa0-aeda-2f9a9681c934" />
-
-- the pulse will go into a frequency divider 2x to create a binary incrementer
-<img width="1079" height="416" alt="image" src="https://github.com/user-attachments/assets/da937488-dd74-4dd6-b783-9a98b58497d8" />
-
-- the output of the adder should be demuxed 3:8
-<img width="707" height="588" alt="image" src="https://github.com/user-attachments/assets/f8155746-456e-4e14-8a02-bf7a7774601a" />
-
-- the demuxed output should control mosfets to turn on different sections of LEDs
-<img width="375" height="214" alt="image" src="https://github.com/user-attachments/assets/62a5dc92-0ca1-42d9-b784-878626d9f826" />
+### Hardware
+- While I originally planned to use a 555 timer, the MIP557 is made to be used in astable mode so I will use that
+<img width="516" height="277" alt="image" src="https://github.com/user-attachments/assets/8b3b72af-2929-41d8-a32e-ea15fbf6b658" />
 
 
-### Pulse gen options:
-- LRC circuitin that case should these just be 1:5
-- 555 timer
-- oscillator of some sort
-
-[idea](https://www.ibiblio.org/kuphaldt/electricCircuits/Digital/DIGI_11.html#xtocid92321):
-  <img width="558" height="228" alt="image" src="https://github.com/user-attachments/assets/3c256f88-e757-430c-9ce4-6c2dce072461" />
+- the pulse will go into a frequency divider 3x to create a binary incrementer. At first I was going to use the 555/557 output as the LSB, but for timings sake it will be more reliable to use the flip flops for the LSB
+<img width="935" height="639" alt="image" src="https://github.com/user-attachments/assets/de3db092-284d-4b73-95cd-af5b752a20c3" />
 
 
-### Binary inrecmenter options:
-- 2 jk flip flops acting as frequency dividers?
+- the output of the adder is then demuxed 3:8
+<img width="447" height="401" alt="image" src="https://github.com/user-attachments/assets/57ecdfec-9c2c-443d-a55f-b9b3ee59cd2b" />
 
-[circuit:](https://www.allaboutcircuits.com/textbook/digital/chpt-10/edge-triggered-latches-flip-flops/)
-[or component
-](https://www.digikey.com/en/products/filter/logic/flip-flops/706?s=N4IgjCBcpgnAHLKoDGUBmBDANgZwKYA0IA9lANogAMIAugL7EC0AbMiGpAC4BOArkVIUQAZhDEATHUYgmSaByi8BxMpEpjiEBsykLOywWsoBWaTLYKAlgBMossFQjEADl3viQXAJ4v89zFw0enogA)
+- the demuxed output then goes to OR gates for sections that are active for multiple frames
+<img width="752" height="592" alt="image" src="https://github.com/user-attachments/assets/b3137ebb-3cf7-4186-88eb-9d0848af02d3" />
 
+- and then the rest of the outputs from the mux and the outputs from the OR gates are sent to the MOSFETs
+<img width="613" height="605" alt="image" src="https://github.com/user-attachments/assets/50fb694d-7b4b-444e-b20e-be9e88555426" />
 
+- the LEDs are color coded to what section they are a part of.
+- from vote of my friends and family, the stems of the fireworks are white while the bursts are different color. the white LEDs for the stems require a higher voltage than amber and red LEDs I originally planned on using (since I love the color of amber LEDs and red is a nice firework color). I really do not want to sort out ~70 0805 resistors when it came time to solder, so I chose green, blue, and yellow so they would all have the same voltage requirements and therefore the same resistors. 
+<img width="877" height="733" alt="image" src="https://github.com/user-attachments/assets/28b7a536-8291-4ed8-a22a-e68317bf63bd" />
 
+#### PCB Images 😀
+- I am still working on the silkscreen
+<img width="994" height="898" alt="image" src="https://github.com/user-attachments/assets/6c532f59-1e33-4202-ba3b-e867afa7218b" />
 
+<img width="788" height="765" alt="image" src="https://github.com/user-attachments/assets/7cbcc828-5071-465b-b571-d3de6f5eaad6" />
+
+<img width="788" height="765" alt="image" src="https://github.com/user-attachments/assets/f74eb3aa-8ada-4aad-9a3f-a9adcfbe3377" />
+
+- The trace widths for the main branches are 22mils. there are a maximum of ~8 LEDs per branch so I used the digikey trace width calculator and found this width is fine. there are no internal layers so I didnt need to make it any wider.
+
+- power traces are 40 mils.
+
+##### Silkscreen options:
+I made all of these images by coloring over photographs but I am not sure where I'd place them onto the board. i guess that is a good problem to have
+
+<img width="788" height="765" alt="image" src="https://github.com/user-attachments/assets/c7b0b8a3-d0ec-4dc7-bde9-726d941adca0" />
