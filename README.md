@@ -6,7 +6,7 @@ This is a pcb for my grad cap
 - the pcb should have a space for the little tassle knob in the middle
 - the battery should be flat and fit underneath the cap or pcb
 - the fireworks should move while the power is on
-#
+
 ### LED Sequence:
 
 ![WhatsApp Video 2026-01-28 at 01 59 47](https://github.com/user-attachments/assets/233ab3e7-62e2-4c4f-bd1b-c888495b62f6)
@@ -116,17 +116,13 @@ LED resistors:
 
 #### PCB Images 😀
 - I am still working on the silkscreen
-<img width="463" height="412" alt="image" src="https://github.com/user-attachments/assets/d485c053-aaf5-4132-94a4-aa6249da4c5c" />
 
-<img width="463" height="412" alt="image" src="https://github.com/user-attachments/assets/b221860e-c547-4e8b-bbb0-0f7107d869a9" />
-<img width="463" height="412" alt="image" src="https://github.com/user-attachments/assets/d00cb994-5be2-46ba-aeb2-7729f13977f3" />
+<img width="689" height="684" alt="image" src="https://github.com/user-attachments/assets/3abb942e-1a3b-4948-9c5e-43856d43dc12" />
+
+- the purdue emblem is on the solder mask layer so it is copper colored
+- the handwriting is in silkscreen
+<img width="246" height="114" alt="image" src="https://github.com/user-attachments/assets/97004121-dc3b-42cc-8ee5-5eef57975a26" />
+
 
 - The trace widths for the main branches are 22mils. there are a maximum of ~8 LEDs per branch so I used the digikey trace width calculator and found this width is fine. there are no internal layers so I didnt need to make it any wider.
-- yes, that connector hangs off the edge right now - im going to get to that
-
 - power traces are 40 mils.
-
-##### Silkscreen options:
-I made all of these images by coloring over photographs but I am not sure where I'd place them onto the board. i guess that is a good problem to have
-
-<img width="788" height="765" alt="image" src="https://github.com/user-attachments/assets/c7b0b8a3-d0ec-4dc7-bde9-726d941adca0" />
