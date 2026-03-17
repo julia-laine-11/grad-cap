@@ -14,16 +14,29 @@ This is a pcb for my grad cap
 This was previously 16 frames, but I reduced it to 8 due to the crazy amount of traces needed (and the large amount of time to animate it). I also limited each LED to 2 frames at maximum and reduced the amount of LEDs per firework.
 8 frames should be easier to route and less expensive for me to manufacture, lol
 
-The LEDs are also updated to be the correct colors. I decided to make the tails white, so I needed to make the other LEDs able to run at about the same voltage. Blue and some greens and yellows can do 2.9-3.2v (what white typically runs at). I want to have similar/the same voltages so I do not need to spend so much time soldering and setting the correct resistors. 
 
 ### Hardware
 - While I originally planned to use a 555 timer, the MIP557 is made to be used in astable mode so I will use that
-<img width="516" height="277" alt="image" src="https://github.com/user-attachments/assets/8b3b72af-2929-41d8-a32e-ea15fbf6b658" />
+- It will have a potentiometer instead of a static resistor so that the frame rate can be sped up/lowered
+
+<img width="331" height="267" alt="image" src="https://github.com/user-attachments/assets/fd8a8c11-7a70-4c9d-b69b-4a8301ea13ad" />
+
+- I did add a footprint for a 555 on the back in case I cannot get this chip to work. I do not have one in person to prototype with.
+
+<img width="176" height="130" alt="image" src="https://github.com/user-attachments/assets/d8366f4b-e523-4377-a559-3d9bf51551d7" />
 
 
 - the pulse will go into a binary incrementer. At first I was going to use make it myself with 3 flip flops but I couldn't find the chips I needed at the ECE shop so I will just use a binary incrementer that is available.
+
+<img width="696" height="322" alt="image" src="https://github.com/user-attachments/assets/45ac109b-0360-48ba-b455-fc5aa2996721" />
+
 - the output of the incrementer is then demuxed 3:8
+
+<img width="734" height="322" alt="image" src="https://github.com/user-attachments/assets/cdee372b-6701-4d31-8cc1-a08969a0df91" />
+
+
 - the demuxed output then goes to OR gates for sections that are active for multiple frames
+
 <img width="1406" height="683" alt="image" src="https://github.com/user-attachments/assets/28ddbd11-935d-4805-936a-3dac74770bed" />
 
 
@@ -31,8 +44,33 @@ The LEDs are also updated to be the correct colors. I decided to make the tails 
 <img width="613" height="605" alt="image" src="https://github.com/user-attachments/assets/50fb694d-7b4b-444e-b20e-be9e88555426" />
 
 - the LEDs are color coded to what section they are a part of.
-- from vote of my friends and family, the stems of the fireworks are white while the bursts are different color. the white LEDs for the stems require a higher voltage than amber and red LEDs I originally planned on using (since I love the color of amber LEDs and red is a nice firework color). I really do not want to sort out ~70 0805 resistors when it came time to solder, so I chose green, blue, and yellow so they would all have the same voltage requirements and therefore the same resistors. 
-<img width="877" height="733" alt="image" src="https://github.com/user-attachments/assets/28b7a536-8291-4ed8-a22a-e68317bf63bd" />
+- from vote of my friends and family, the stems of the fireworks are white while the blooms are different color.
+  
+<img width="728" height="611" alt="image" src="https://github.com/user-attachments/assets/6262a701-8356-449d-b8cd-6371e6d786b6" />
+
+LED resistors:
+- input: 3.7v  
+
+  - white: 3.1v  20mA
+  
+    - 3.7-3.1 = .6/.02 = 30
+
+  - amber: 2v 20mA
+  
+    - 3.7-2 = 1.7/.02 = 85
+
+  - red: 2v 20mA
+  
+    - 3.7-2 = 1.7/.02 = 85
+
+  - green: 2.2v 20mA
+  
+    - 3.7-2.2 = 1.5/.02 = 75
+   
+30 ohms: 16
+
+80 ohms: 51
+
 
 #### Prototyping
 - I used the 3v output from my STM proto board to power it. The battery will output 3.7v but all of the datasheets say the components can use 3.7v so it's fine.
