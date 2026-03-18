@@ -437,7 +437,7 @@
 		)
 		(fill
 			(type color)
-			(color 65 152 255 0.17)
+			(color 255 0 1 0.168627451)
 		)
 		(uuid 03bd81ab-7c9e-4a21-bb33-c523ec5e69ce)
 	)
@@ -515,7 +515,7 @@
 		)
 		(fill
 			(type color)
-			(color 65 152 255 0.17)
+			(color 255 0 1 0.17)
 		)
 		(uuid 708bbecb-c754-4b33-9af1-e7af6ac024c7)
 	)
@@ -528,7 +528,7 @@
 		)
 		(fill
 			(type color)
-			(color 65 152 255 0.17)
+			(color 255 0 1 0.168627451)
 		)
 		(uuid 8ad58ca9-f021-42c6-ab57-03fa5a6dbdd9)
 	)
@@ -567,7 +567,7 @@
 		)
 		(fill
 			(type color)
-			(color 65 152 255 0.17)
+			(color 255 0 1 0.168627451)
 		)
 		(uuid a3032954-02b0-4afc-92dd-a8680c183e80)
 	)
@@ -649,13 +649,14 @@
 		)
 		(uuid f20abd3d-8952-4dde-a518-bc95e92e995d)
 	)
-	(text "red:27\ngrn:24"
+	(text "white: 16\n\n\namber: 14\n\n\nred: 19\n\n\ngreen: 18"
 		(exclude_from_sim no)
-		(at 270.002 74.168 0)
+		(at 264.668 83.058 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify right top)
 		)
 		(uuid "137f60c5-2e20-4b0c-a1e9-22a71aa049b1")
 	)
@@ -669,6 +670,17 @@
 		)
 		(uuid "2c7caea4-f65c-4d89-bd96-da5fa3436903")
 	)
+	(text "input: 3.7v  \n\nwhite: 3.1v  20mA\n3.7-3.1 = .6/.02 = 30\n\namber: 2v 20mA\n3.7-2 = 1.7/.02 = 85\n\nred: 2v 20mA\n3.7-2 = 1.7/.02 = 85\n\ngreen: 2.2v 20mA\n3.7-2.2 = 1.5/.02 = 75\n"
+		(exclude_from_sim no)
+		(at 266.954 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "81ffc5ec-ce7b-4386-93a5-2b35024bfe9a")
+	)
 	(text "collector"
 		(exclude_from_sim no)
 		(at 310.134 24.892 0)
@@ -679,15 +691,27 @@
 		)
 		(uuid "aef843e5-e450-4981-b1f8-0fad88373891")
 	)
-	(text "FIREWORKS"
+	(text "LEDs\n"
 		(exclude_from_sim no)
-		(at 259.334 75.438 0)
+		(at 254.254 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left top)
 		)
 		(uuid "b272c50e-a03c-4e17-bbed-f6b808cf3759")
+	)
+	(text "30 ohms: 16\n80 ohms: 51\n\n"
+		(exclude_from_sim no)
+		(at 297.18 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f9e2c0a4-1b3a-4f62-9208-11b9e3a8b918")
 	)
 	(junction
 		(at 116.84 50.8)
