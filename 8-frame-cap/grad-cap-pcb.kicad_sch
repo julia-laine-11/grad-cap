@@ -228,7 +228,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 2.54 2.54 180)
+					(at 2.54 2.54 0)
 					(length 2.54)
 					(name ""
 						(effects
@@ -4979,6 +4979,10 @@
 		(uuid "a46ec0e1-3e4d-4d41-90cb-2befb8b34bda")
 	)
 	(no_connect
+		(at 57.15 40.64)
+		(uuid "af00a923-e861-49af-8fb7-b9873ecb2fba")
+	)
+	(no_connect
 		(at 34.29 90.17)
 		(uuid "b99ffda4-2748-41f8-950a-062c1273b902")
 	)
@@ -5156,6 +5160,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 38.1) (xy 57.15 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14b312e7-820c-41e7-b589-8de6036b4ed4")
+	)
+	(wire
+		(pts
 			(xy 21.59 40.64) (xy 25.4 40.64)
 		)
 		(stroke
@@ -5183,16 +5197,6 @@
 			(type default)
 		)
 		(uuid "1bd934b8-9eec-424a-bd31-1c6cb19b7dc8")
-	)
-	(wire
-		(pts
-			(xy 59.69 40.64) (xy 59.69 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c96818a-ca88-4434-93a2-f888cadd7da3")
 	)
 	(wire
 		(pts
@@ -5796,6 +5800,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 43.18) (xy 59.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908f69da-02f5-4687-960e-c31d4334faef")
+	)
+	(wire
+		(pts
 			(xy 110.49 140.97) (xy 111.76 140.97)
 		)
 		(stroke
@@ -6293,16 +6307,6 @@
 			(type default)
 		)
 		(uuid "ea647fbc-52f0-4812-8a9f-89364b7a76f7")
-	)
-	(wire
-		(pts
-			(xy 57.15 40.64) (xy 57.15 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebfce7c2-c273-4381-b7eb-64594a907d7c")
 	)
 	(polyline
 		(pts
@@ -10082,71 +10086,6 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 59.69 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "37d13722-863a-43d0-abc8-1bcf0418f372")
-		(property "Reference" "#PWR051"
-			(at 59.69 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 59.69 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 59.69 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f1d4e36-16a8-4a52-99eb-9e6ed43faba9")
-		)
-		(instances
-			(project "grad-cap-pcb"
-				(path "/e928cd2e-687b-4f0f-a80d-e766cc3f22d6"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
 		(at 21.59 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13572,7 +13511,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc37bafb-104f-44c1-b263-c9a8de4ed236")
 		(property "Reference" "R70"
-			(at 60.96 44.5007 90)
+			(at 60.96 45.7199 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13581,7 +13520,7 @@
 			)
 		)
 		(property "Value" "91AR1MEGLF"
-			(at 60.96 47.0407 90)
+			(at 60.96 48.2599 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13589,7 +13528,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "GRAD-CAP:1M-potentiometer"
+		(property "Footprint" "RES3_91A_TTE"
 			(at 57.15 40.64 0)
 			(effects
 				(font
