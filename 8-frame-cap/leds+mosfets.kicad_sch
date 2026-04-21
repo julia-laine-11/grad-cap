@@ -507,19 +507,6 @@
 		(uuid 32493863-f2c2-4397-85c3-7e99b4da48fc)
 	)
 	(rectangle
-		(start 16.764 56.388)
-		(end 46.228 70.358)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 255 41 77 0.44)
-		)
-		(uuid 39b49558-7080-4ee9-b836-60aeda8ba486)
-	)
-	(rectangle
 		(start 163.322 14.986)
 		(end 194.564 103.632)
 		(stroke
